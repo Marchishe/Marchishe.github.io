@@ -8,6 +8,9 @@
       align-items: center;
     }
   }
+  &__menu {
+    display: none;
+  }
   &__language {
     font-style: normal;
     font-weight: 400;
@@ -42,7 +45,7 @@
   &__nav {
     &-list {
       display: flex;
-      gap: 1rem;
+      flex-wrap: wrap;
     }
     &-item {
       display: flex;
@@ -53,12 +56,40 @@
         background-color: $hoverBgColor;
         border-radius: 1rem;
       }
+      &:hover .header__nav-item-text {
+        color: $whiteColor;
+      }
+      &:hover .header__nav-item-icon {
+        fill-opacity: 1;
+      }
+      &:hover .header__nav-item-dropdown {
+        fill-opacity: 1;
+      }
       &-text {
         font-style: normal;
         font-weight: 500;
         font-size: 1.4rem;
         line-height: 1.4rem;
         color: $navTextColor;
+      }
+      &-visible {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1rem;
+        transition: 0.3s;
+        &:hover {
+          background-color: $hoverBgColor;
+          border-radius: 1rem;
+        }
+        &:hover .header__nav-item-text {
+          color: $whiteColor;
+        }
+        &:hover .header__nav-item-icon {
+          fill-opacity: 1;
+        }
+        &:hover .header__nav-item-dropdown {
+          fill-opacity: 1;
+        }
       }
     }
     &-link {
@@ -80,9 +111,9 @@
     justify-content: space-between;
     margin-top: 4.8rem;
   }
-  &__button-arrow{
+  &__button-arrow {
     transition: 0.3s;
-    &:hover{
+    &:hover {
       cursor: pointer;
       transform: scale(1.1);
     }
@@ -96,9 +127,9 @@
       display: flex;
       gap: 0 1.5rem;
     }
-    &-boat-photo{
+    &-boat-photo {
       transition: 0.5s;
-      &:hover{
+      &:hover {
         cursor: pointer;
         opacity: 0.8;
         transform: scale(1.1);
@@ -121,9 +152,9 @@
       line-height: 116%;
       color: $textColor;
     }
-    &-flag{
+    &-flag {
       transition: 0.3s;
-      &:hover{
+      &:hover {
         cursor: pointer;
         opacity: 0.6;
       }
@@ -141,7 +172,7 @@
       max-height: 3rem;
       transition: 0.3s;
       margin-right: -1rem;
-      &:hover{
+      &:hover {
         cursor: pointer;
         transform: scale(1.1);
       }
@@ -158,7 +189,7 @@
       font-size: 1.4rem;
       line-height: 1.4rem;
       transition: 0.3s;
-      &:hover{
+      &:hover {
         cursor: pointer;
         opacity: 0.8;
       }
@@ -176,7 +207,7 @@
       margin-right: 4.8rem;
       background-color: $whiteColor;
       transition: 0.3s;
-      &:hover{
+      &:hover {
         cursor: pointer;
         opacity: 0.8;
       }
@@ -190,9 +221,124 @@
       color: $textColor;
     }
   }
+  &__title{
+    display: none;
+  }
 }
 .logo-name {
   margin-left: 7.9rem;
 }
 
-  
+@media screen and (max-width: 1199px) {
+  .logo-name {
+    margin-left: 1.6rem;
+  }
+  .header {
+    &__logo-image-link {
+      display: none;
+    }
+    &__profile-photo-language {
+      margin-right: 1.6rem;
+    }
+    &__language {
+      display: none;
+    }
+    &__second-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+    }
+    &__menu {
+      display: block;
+      transition: 0.3s;
+      margin-left: 1.5rem;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+    &__nav {
+      position: absolute;
+      margin-left: 3.5rem;
+      &-item {
+        display: none;
+        &-visible {
+          transition: 0.3s;
+          &:hover {
+            background-color: transparent;
+          }
+          &:hover .header__nav-item-icon {
+            opacity: 0.8;
+          }
+          &:hover .header__nav-item-text {
+            opacity: 0.8;
+          }
+          &:hover .header__nav-item-dropdown {
+            opacity: 0.8;
+          }
+        }
+        &-icon {
+          fill-opacity: 1;
+        }
+        &-text {
+          color: $whiteColor;
+        }
+        &-dropdown {
+          fill-opacity: 1;
+        }
+      }
+    }
+    &__plus-icon {
+      margin-right: 1.5rem;
+    }
+    &__third-section {
+      margin-top: 1.6rem;
+    }
+    &__button-arrow {
+      max-width: 2.4rem;
+      height: 2.4rem;
+    }
+    &__info-card {
+      margin-left: 1.6rem;
+      &-boat-photo {
+        max-width: 5.6rem;
+        max-height: 5.6rem;
+      }
+      &-title {
+        font-size: 1.6rem;
+      }
+      &-profile-photo-hidden {
+        display: none;
+      }
+    }
+    &__downloader {
+      &-icon-text {
+        margin-right: 1.6rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 619px) {
+  .header {
+    &__third-section {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__info-card {
+      margin-left: 0;
+    }
+    &__title {
+      display: block;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 115%;
+      text-transform: uppercase;
+      color: $textColor;
+      margin:1.6rem 0;
+    }
+    &__downloader {
+    }
+  }
+}
