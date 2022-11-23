@@ -64,6 +64,8 @@
     }
 
     &-flag {
+      max-width: 3.2rem;
+      max-height: 1.8rem;
       transition: 0.3s;
 
       &:hover {
@@ -79,12 +81,13 @@
     }
 
     &-profile-photo {
-      border: 0.2rem solid $whiteColor;
+      box-sizing: border-box;
+      border: 0.1rem solid $whiteColor;
       border-radius: 50%;
       height: 100%;
       width: 100%;
-      max-width: 3rem;
-      max-height: 3rem;
+      max-width: 4rem;
+      max-height: 4rem;
       transition: 0.8s;
       margin-right: -1rem;
 
@@ -92,24 +95,27 @@
         cursor: pointer;
         transform: scale(1.1);
       }
-    }
 
-    &-profile-photo-button {
-      border: 0.2rem solid $whiteColor;
-      border-radius: 50%;
-      width: 3.5rem;
-      height: 3.5rem;
-      color: $whiteColor;
-      background-color: $textColor;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.4rem;
-      line-height: 1.4rem;
-      transition: 0.3s;
+      &-button {
+        box-sizing: border-box;
+        border: 0.1rem solid $whiteColor;
+        border-radius: 50%;
+        width: 3.5rem;
+        height: 3.5rem;
+        color: $whiteColor;
+        background-color: $textColor;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        transition: 0.3s;
+        width: 4rem;
+        height: 4rem;
 
-      &:hover {
-        cursor: pointer;
-        opacity: 0.9;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.9;
+        }
       }
     }
   }
@@ -120,12 +126,13 @@
 
     &-button {
       display: flex;
-      padding: 1rem 3.4rem;
-      gap: 0 1.5rem;
+      gap: 0 0.967rem;
       border: 0.1rem solid $textColor;
       border-radius: 0.8rem;
       background-color: $whiteColor;
       transition: 0.3s;
+      padding: 1rem 2.117rem;
+
 
       &:hover {
         cursor: pointer;
@@ -150,10 +157,35 @@
 
 @media screen and (max-width: 1199px) {
   .boats {
+    padding: 0 1.6rem;
     margin-top: 1.6rem;
 
+    &__button {
+      width: 2.4rem;
+      height: 2.4rem;
+      padding: 0;
+    }
 
     &__info-card {
+      &-profile-photo {
+        max-width: 3.2rem;
+        max-height: 3.2rem;
+
+        &-button {
+          width: 3.2rem;
+          height: 3.2rem;
+        }
+      }
+
+      &-flag-title {
+        padding-top: 0;
+      }
+
+      &-flag {
+        max-width: 2rem;
+        max-height: 1.2rem;
+      }
+
       &-content {
         align-items: center;
       }
@@ -168,7 +200,7 @@
       }
 
       &-title {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
 
       &-profile-photo-hidden {
@@ -176,20 +208,14 @@
       }
     }
 
-    &__downloader {
-      &-icon-text {
-        margin-right: 1.6rem;
-      }
-    }
   }
 }
 
-@media screen and (max-width: 619px) {
+
+@media screen and (max-width: 583px) {
 
   .boats {
     flex-direction: column;
-    align-items: center;
-
 
     &__info-card {
       margin-left: 0;
@@ -205,6 +231,11 @@
       text-transform: uppercase;
       color: $textColor;
       margin: 1.6rem 0;
+    }
+
+    &__downloader-button {
+      width: 100%;
+      justify-content: center;
     }
   }
 }
