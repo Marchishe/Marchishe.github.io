@@ -3,13 +3,23 @@
   padding: 4.8rem;
   display: grid;
   grid-gap: 2.4rem;
-  grid-template-columns: 1fr 59rem;
+  grid-template-columns: 121rem 59rem;
   grid-template-areas:
-          "tasks yellowblock"
+          "tasks alerts"
           "position calendar"
           "work-lists crew-lists"
           "systems systems"
           "added-tasks added-tasks";
+}
+
+.title {
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: $textColor;
 }
 
 .tasks {
@@ -30,17 +40,6 @@
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
   border-radius: 1.6rem;
   grid-area: position;
-}
-
-.text {
-  display: flex;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 120%;
-  text-transform: uppercase;
-  color: $textColor;
-  padding: 2.4rem;
 }
 
 .work-lists {
@@ -75,14 +74,14 @@
   grid-area: added-tasks;
 }
 
-.yellow {
+.alerts {
   background-color: $yellowBg;
   max-width: 59rem;
   height: 102.15rem;
   border: 0.5px solid #E7E7EB;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
   border-radius: 1.6rem;
-  grid-area: yellowblock;
+  grid-area: alerts;
 }
 
 //
@@ -112,7 +111,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
             "tasks tasks"
-            "yellowblock yellowblock"
+            "alerts alerts"
             "position position"
             "calendar crew-lists"
             "systems systems"
@@ -122,7 +121,7 @@
   .tasks {
     max-width: 140.4rem;
   }
-  .yellow {
+  .alerts {
     max-width: 140.4rem;
     height: 53.6rem;
   }
@@ -157,7 +156,7 @@
     grid-template-columns: 1fr;
     grid-template-areas:
             "tasks"
-            "yellowblock"
+            "alerts"
             "position"
             "calendar"
             "crew-lists"
@@ -168,7 +167,7 @@
     max-width: 71.2rem;
     height: 107.3rem;
   }
-  .yellow {
+  .alerts {
     max-width: 71.2rem;
     height: 104.8rem;
   }
@@ -198,7 +197,7 @@
   .markup {
     grid-template-areas:
                   "tasks"
-                  "yellowblock"
+                  "alerts"
                   "position"
                   "calendar"
                   "systems"
@@ -209,7 +208,7 @@
     max-width: 34rem;
     height: 129.6rem;
   }
-  .yellow {
+  .alerts {
     max-width: 34rem;
     height: 104.8rem;
   }

@@ -1,0 +1,141 @@
+.tasks {
+  padding: 2.4rem;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2.4rem;
+  }
+}
+
+.time-zone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: $grayText;
+}
+
+.control-panel {
+  padding: 0 3.817rem;
+  max-width: 56.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: $controlBg;
+  border: 0.1rem solid #E0E0E0;
+  border-radius: 0.8rem;
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $textColor;
+  }
+
+  &__button_checked {
+    background-color: $textColor;
+    border-radius: 0.6rem;
+    color: $whiteColor;
+    padding: 1rem 4.117rem;
+  }
+}
+
+.subtitle {
+  display: flex;
+  padding-top: 2.4rem;
+  padding-bottom: 0.2rem;
+  @extend %blackTextMd;
+}
+
+.select {
+  border: 0.1rem solid #BDBDBD;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 76.2rem;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.select-text {
+  padding: 1rem 1.2rem;
+  @extend %blackTextMd;
+}
+
+.select-dropdown {
+  margin-right: 0.8rem;
+  fill: $dropdownFill;
+}
+
+.select-inputs-button {
+  display: flex;
+}
+
+.selection-block {
+  &__custom-checkbox {
+    @extend %blackTextMd;
+    border: 0.2rem solid #351F73;
+    border-radius: 4rem;
+    padding: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.checkbox-block {
+  display: flex;
+  padding: 0 1.6rem;
+  gap: 0.8rem;
+}
+
+#fake-checkbox {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.radio-button {
+  border: none;
+  background-color: transparent;
+}
+
+.drafts {
+  display: flex;
+  align-items: center;
+  gap: 0 0.8rem;
+
+  &__text {
+    @extend %blackTextMd
+  }
+
+}
+
+.button {
+  padding: 1rem 2rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $whiteColor;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: $textColor;
+  margin-left: 1.6rem;
+}

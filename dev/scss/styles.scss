@@ -1,13 +1,29 @@
 @import "variablies.scss";
+@import 'header.scss';
+@import 'menu.scss';
+@import 'boats.scss';
+@import "markup.scss";
+@import "tasks.scss";
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   background-color: $bgColor;
+}
+
+button {
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .container {
@@ -15,8 +31,9 @@ body {
   margin: 0 auto;
 }
 
-@import 'header.scss';
-@import 'menu.scss';
-@import 'boats.scss';
-@import "markup.scss";
-
+%blackTextMd {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
