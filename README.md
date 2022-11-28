@@ -1,1 +1,1 @@
-(https://marchishe.github.io/seazone-header/build/)
+(https://marchishe.github.io/seazone/build/)
