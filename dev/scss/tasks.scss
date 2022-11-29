@@ -1,3 +1,6 @@
+@import 'mixines';
+@import 'variablies';
+
 .tasks {
   padding: 2.4rem;
 
@@ -138,4 +141,150 @@
   border-radius: 0.4rem;
   background-color: $textColor;
   margin-left: 1.6rem;
+}
+
+.color-tasks-blocks {
+  display: flex;
+  gap: 0 1.6rem;
+  padding: 2.4rem 0;
+
+  &__title {
+    padding-top: 2.4rem;
+    padding-left: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $whiteColor;
+  }
+
+  &__content {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+  }
+
+  &__tasks-sum {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 5.6rem;
+    line-height: 6.6rem;
+    color: $whiteColor;
+    padding: 0.8rem 1.2rem 1.6rem 2.4rem;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 120%;
+    color: $whiteColor;
+  }
+
+  &__button {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    display: flex;
+    background-color: transparent;
+
+  }
+}
+
+.green-block {
+  @extend %colorBlocksProperties;
+  background-color: $greenTaskBlock;
+}
+
+.violete-block {
+  @extend %colorBlocksProperties;
+  background-color: $violeteTaskBlock;
+}
+
+.pink-block {
+  @extend %colorBlocksProperties;
+  background-color: $pinkTaskBlock;
+}
+
+.gray-block {
+  @extend %colorBlocksProperties;
+  background-color: $grayTaskBlock;
+}
+
+.assignee-panels {
+  padding-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem 0;
+}
+
+.assignee-panel {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.assignee-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.8rem;
+  width: 57.3rem;
+  height: 4.7rem;
+  background-color: $controlBg;
+  border-radius: 0.8rem;
+
+  &_unassigned {
+    background-color: $unassignedBg;
+  }
+
+  &__tasks-sum {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    &_unassigned {
+      color: $redColor;
+    }
+  }
+}
+
+.assignee-congestion {
+  width: 57.3rem;
+  height: 4.7rem;
+  border-radius: 0.8rem;
+
+  &__rendering {
+    border-radius: 0.8rem;
+    background-color: $menuBgColor;
+
+    &_unassigned {
+      background-color: $unassignedBg;
+    }
+  }
+}
+
+.profile-photo-position-name {
+  display: flex;
+  align-items: center;
+  gap: 0 0.8rem;
+}
+
+.assignee-position {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+
+  &_unassigned {
+    color: $redColor;
+  }
+}
+
+.assignee-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $grayText;
 }

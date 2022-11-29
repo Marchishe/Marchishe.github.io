@@ -1,39 +1,21 @@
-@import "variablies.scss";
-@import 'header.scss';
-@import 'menu.scss';
-@import 'boats.scss';
-@import "markup.scss";
-@import "tasks.scss";
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
+@import "variablies";
+@import 'header';
+@import 'menu';
+@import 'boats';
+@import "markup";
+@import "tasks";
+@import "mixines";
+@import "nullstyles";
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: $bgColor;
 }
 
-button {
-  padding: 0;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
 
 .container {
   max-width: 1920px;
   margin: 0 auto;
 }
 
-%blackTextMd {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-}
+
