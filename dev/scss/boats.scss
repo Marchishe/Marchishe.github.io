@@ -157,7 +157,7 @@
 
 @media screen and (max-width: 1555px) {
   .boats {
-    padding: 0 1.6rem;
+    padding: 0 4.8rem;
     margin-top: 1.6rem;
 
     &__button {
@@ -211,6 +211,11 @@
   }
 }
 
+@media screen and (max-width: 745px) {
+  .boats {
+    padding: 0 1.6rem;
+  }
+}
 
 @media screen and (max-width: 583px) {
 
