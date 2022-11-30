@@ -236,16 +236,21 @@
   &_unassigned {
     background-color: $unassignedBg;
   }
+}
 
-  &__tasks-sum {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+.tasks-sum {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $textColor;
 
-    &_unassigned {
-      color: $redColor;
-    }
+  &_unassigned {
+    color: $redColor;
+  }
+
+  &_bold {
+    font-weight: 700;
   }
 }
 
@@ -257,6 +262,7 @@
   &__rendering {
     border-radius: 0.8rem;
     background-color: $menuBgColor;
+    height: 100%;
 
     &_unassigned {
       background-color: $unassignedBg;
@@ -287,4 +293,73 @@
   font-size: 14px;
   line-height: 16px;
   color: $grayText;
+}
+
+.tasks-sum-button {
+  display: flex;
+  align-items: center;
+  gap: 0 1.2rem;
+}
+
+.dividing-line-wrapper {
+  padding: 2.4rem 0;
+}
+
+.dividing-line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: $bgButton;
+}
+
+.created-closed-tasks-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem 0;
+  padding-top: 1.6rem;
+}
+
+.status-rendering-panels {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.status-panel-congestion {
+  width: 57.3rem;
+  height: 2.8rem;
+  border-radius: 0.8rem;
+
+  &__rendering {
+    border-radius: 0.8rem;
+    height: 100%;
+    background-color: $blueColor;
+  }
+}
+
+.status-panel {
+  width: 57.3rem;
+  height: 2.838rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $controlBg;
+  border-radius: 0.8rem;
+  padding: 0 0.8rem;
+}
+
+.status {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: $textColor;
+
+  &_bold {
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .select {
+    width: 100%;
+  }
 }
