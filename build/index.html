@@ -186,308 +186,475 @@
                 </div>
             </div>
 
-            <div class="markup">
-                <div class="tasks">
-                    <div class="tasks__heading">
-                        <h2 class="title">Tasks</h2>
-                        <span class="time-zone">Time zone: IST (UTC +02:00)</span>
-                    </div>
+            <!--    <div class="markup">-->
+            <div class="tasks">
+                <div class="tasks__heading">
+                    <h2 class="title">Tasks</h2>
+                    <span class="time-zone">Time zone: IST (UTC +02:00)</span>
+                </div>
 
-                    <div class="control-panel">
-                        <button class="control-panel__button">Previous tasks</button>
-                        <button class="control-panel__button control-panel__button_checked">
-                            Today’s tasks
-                        </button>
-                        <button class="control-panel__button">Planned tasks</button>
-                    </div>
-                    <div class="control-panel control-panel_sm">
-                        <button class="control-panel__button">Previous</button>
-                        <button class="control-panel__button control-panel__button_checked">Today’s</button>
-                        <button class="control-panel__button">Planned</button>
-                    </div>
+                <div class="control-panel">
+                    <button class="control-panel__button">Previous tasks</button>
+                    <button class="control-panel__button control-panel__button_checked">
+                        Today’s tasks
+                    </button>
+                    <button class="control-panel__button">Planned tasks</button>
+                </div>
+                <div class="control-panel control-panel_sm">
+                    <button class="control-panel__button">Previous</button>
+                    <button class="control-panel__button control-panel__button_checked">Today’s</button>
+                    <button class="control-panel__button">Planned</button>
+                </div>
 
-                    <div class="selection-block">
-                        <span class="subtitle">Assignee</span>
-                        <div class="select-inputs-button">
-                            <div class="select">
-                                <span class="select-text">Gurbanhuly Berdymuh...</span>
-                                <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg" class="select-dropdown">
-                                    <path d="M7.5 10L12.5 15L17.5 10H7.5Z" />
+                <div class="selection-block">
+                    <span class="subtitle">Assignee</span>
+                    <div class="select-inputs-button">
+                        <div class="select">
+                            <span class="select-text">Gurbanhuly Berdymuh...</span>
+                            <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg" class="select-dropdown">
+                                <path d="M7.5 10L12.5 15L17.5 10H7.5Z" />
+                            </svg>
+                        </div>
+                        <div class="checkbox-block">
+                            <input type="checkbox" id="fake-checkbox" />
+                            <label for="fake-checkbox" class="selection-block__custom-checkbox">Open</label>
+                            <label for="fake-checkbox" class="selection-block__custom-checkbox">Closed</label>
+                        </div>
+                        <div class="drafts">
+                            <button class="radio-button">
+                                <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="radio-button">
+                                    <rect width="40" height="24" rx="12" fill="#4F194A" />
+                                    <circle cx="28" cy="12" r="10" fill="white" />
+                                </svg>
+                            </button>
+                            <span class="drafts__text">Drafts (14)</span>
+                        </div>
+                        <button class="button">Apply</button>
+                    </div>
+                </div>
+
+                <div class="color-tasks-blocks">
+                    <div class="green-block">
+                        <h2 class="color-tasks-blocks__title">Preventive</h2>
+                        <div class="color-tasks-blocks__content">
+                            <div class="color-tasks-blocks__tasks-sum">16</div>
+                            <span class="color-tasks-blocks__text">tasks</span>
+                            <button class="color-tasks-blocks__button">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.776 24.1093L22.3853 16.5L14.776 8.89062L12.8907 10.776L18.6147 16.5L12.8907 22.224L14.776 24.1093Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="violete-block">
+                        <h2 class="color-tasks-blocks__title">Installation</h2>
+                        <div class="color-tasks-blocks__content">
+                            <div class="color-tasks-blocks__tasks-sum">12</div>
+                            <span class="color-tasks-blocks__text">tasks</span>
+                            <button class="color-tasks-blocks__button">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.776 24.1093L22.3853 16.5L14.776 8.89062L12.8907 10.776L18.6147 16.5L12.8907 22.224L14.776 24.1093Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pink-block">
+                        <h2 class="color-tasks-blocks__title">Break / Fault</h2>
+                        <div class="color-tasks-blocks__content">
+                            <div class="color-tasks-blocks__tasks-sum">4</div>
+                            <span class="color-tasks-blocks__text">tasks</span>
+                            <button class="color-tasks-blocks__button">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.776 24.1093L22.3853 16.5L14.776 8.89062L12.8907 10.776L18.6147 16.5L12.8907 22.224L14.776 24.1093Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gray-block">
+                        <h2 class="color-tasks-blocks__title">Other</h2>
+                        <div class="color-tasks-blocks__content">
+                            <div class="color-tasks-blocks__tasks-sum">8</div>
+                            <span class="color-tasks-blocks__text">tasks</span>
+                            <button class="color-tasks-blocks__button">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.776 24.1093L22.3853 16.5L14.776 8.89062L12.8907 10.776L18.6147 16.5L12.8907 22.224L14.776 24.1093Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="title">Tasks by Assignee</h2>
+
+                <div class="assignee-panels">
+                    <div class="assignee-panel">
+                        <div class="assignee-profile assignee-profile_unassigned">
+                            <div class="profile-photo-position-name">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
+                                </svg>
+                                <span class="assignee-position assignee-position_unassigned">Unassigned</span>
+                                <span class="assignee-name"></span>
+                            </div>
+                            <div class="tasks-sum-button">
+                                <span class="tasks-sum tasks-sum_unassigned">6 task(s)</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
                                 </svg>
                             </div>
-                            <div class="checkbox-block">
-                                <input type="checkbox" id="fake-checkbox" />
-                                <label for="fake-checkbox" class="selection-block__custom-checkbox">Open</label>
-                                <label for="fake-checkbox" class="selection-block__custom-checkbox">Closed</label>
-                            </div>
-                            <div class="drafts">
-                                <button class="radio-button">
-                                    <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="radio-button">
-                                        <rect width="40" height="24" rx="12" fill="#4F194A" />
-                                        <circle cx="28" cy="12" r="10" fill="white" />
-                                    </svg>
-                                </button>
-                                <span class="drafts__text">Drafts (14)</span>
-                            </div>
-                            <button class="button">Apply</button>
+                        </div>
+                        <div class="assignee-congestion">
+                            <div class="assignee-congestion__rendering assignee-congestion__rendering_unassigned" style="width: 45%;"></div>
                         </div>
                     </div>
-
-                    <div class="color-tasks-blocks">
-                        <div class="green-block">
-                            <h2 class="color-tasks-blocks__title">Preventive</h2>
-                            <div class="color-tasks-blocks__content">
-                                <div class="color-tasks-blocks__tasks-sum">16</div>
-                                <span class="color-tasks-blocks__text">tasks</span>
-                                <button class="color-tasks-blocks__button">
-                                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.776 24.1093L22.3853 16.5L14.776 8.89062L12.8907 10.776L18.6147 16.5L12.8907 22.224L14.776 24.1093Z" fill="white" />
-                                    </svg>
-                                </button>
+                    <div class="assignee-panel">
+                        <div class="assignee-profile">
+                            <div class="profile-photo-position-name">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
+                                </svg>
+                                <span class="assignee-position"> &ltposition/&gt </span>
+                                <span class="assignee-name"> • &ltname ...&gt</span>
+                            </div>
+                            <div class="tasks-sum-button">
+                                <span class="tasks-sum">12 task(s)</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
                             </div>
                         </div>
-                        <div class="violete-block">
-                            <h2 class="color-tasks-blocks__title">Installation</h2>
-                            <div class="color-tasks-blocks__content">
-                                <div class="color-tasks-blocks__tasks-sum">12</div>
-                                <span class="color-tasks-blocks__text">tasks</span>
-                                <button class="color-tasks-blocks__button">
-                                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.776 24.1093L22.3853 16.5L14.776 8.89062L12.8907 10.776L18.6147 16.5L12.8907 22.224L14.776 24.1093Z" fill="white" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="pink-block">
-                            <h2 class="color-tasks-blocks__title">Break / Fault</h2>
-                            <div class="color-tasks-blocks__content">
-                                <div class="color-tasks-blocks__tasks-sum">4</div>
-                                <span class="color-tasks-blocks__text">tasks</span>
-                                <button class="color-tasks-blocks__button">
-                                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.776 24.1093L22.3853 16.5L14.776 8.89062L12.8907 10.776L18.6147 16.5L12.8907 22.224L14.776 24.1093Z" fill="white" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="gray-block">
-                            <h2 class="color-tasks-blocks__title">Other</h2>
-                            <div class="color-tasks-blocks__content">
-                                <div class="color-tasks-blocks__tasks-sum">8</div>
-                                <span class="color-tasks-blocks__text">tasks</span>
-                                <button class="color-tasks-blocks__button">
-                                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.776 24.1093L22.3853 16.5L14.776 8.89062L12.8907 10.776L18.6147 16.5L12.8907 22.224L14.776 24.1093Z" fill="white" />
-                                    </svg>
-                                </button>
-                            </div>
+                        <div class="assignee-congestion">
+                            <div class="assignee-congestion__rendering" style="width: 85%;"></div>
                         </div>
                     </div>
-
-                    <h2 class="title">Tasks by Assignee</h2>
-
-                    <div class="assignee-panels">
-                        <div class="assignee-panel">
-                            <div class="assignee-profile assignee-profile_unassigned">
-                                <div class="profile-photo-position-name">
-                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
-                                    </svg>
-                                    <span class="assignee-position assignee-position_unassigned">Unassigned</span>
-                                    <span class="assignee-name"></span>
-                                </div>
-                                <div class="tasks-sum-button">
-                                    <span class="tasks-sum tasks-sum_unassigned">6 task(s)</span>
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
-                                    </svg>
-
-                                </div>
+                    <div class="assignee-panel">
+                        <div class="assignee-profile">
+                            <div class="profile-photo-position-name">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
+                                </svg>
+                                <span class="assignee-position">First stewardess</span>
+                                <span class="assignee-name"> • Suzanne Maria Bernez</span>
                             </div>
-                            <div class="assignee-congestion">
-                                <div class="assignee-congestion__rendering assignee-congestion__rendering_unassigned" style="width: 45%;"></div>
+                            <div class="tasks-sum-button">
+                                <span class="tasks-sum">8 task(s)</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
                             </div>
                         </div>
-                        <div class="assignee-panel">
-                            <div class="assignee-profile">
-                                <div class="profile-photo-position-name">
-                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
-                                    </svg>
-                                    <span class="assignee-position"> &ltposition/&gt </span>
-                                    <span class="assignee-name"> • &ltname ...&gt</span>
-                                </div>
-                                <div class="tasks-sum-button">
-                                    <span class="tasks-sum">12 task(s)</span>
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="assignee-congestion">
-                                <div class="assignee-congestion__rendering" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        <div class="assignee-panel">
-                            <div class="assignee-profile">
-                                <div class="profile-photo-position-name">
-                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
-                                    </svg>
-                                    <span class="assignee-position">First stewardess</span>
-                                    <span class="assignee-name"> • Suzanne Maria Bernez</span>
-                                </div>
-                                <div class="tasks-sum-button">
-                                    <span class="tasks-sum">8 task(s)</span>
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="assignee-congestion">
-                                <div class="assignee-congestion__rendering" style="width: 65%;"></div>
-                            </div>
-                        </div>
-                        <div class="assignee-panel">
-                            <div class="assignee-profile">
-                                <div class="profile-photo-position-name">
-                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
-                                    </svg>
-                                    <span class="assignee-position">Yacht owner</span>
-                                    <span class="assignee-name"> • Mahatma Gautama</span>
-                                </div>
-                                <div class="tasks-sum-button">
-                                    <span class="tasks-sum">4 task(s)</span>
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="assignee-congestion">
-                                <div class="assignee-congestion__rendering" style="width: 35%;"></div>
-                            </div>
-                        </div>
-                        <div class="assignee-panel">
-                            <div class="assignee-profile">
-                                <div class="profile-photo-position-name">
-                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
-                                    </svg>
-                                    <span class="assignee-position">&ltposition&gt</span>
-                                    <span class="assignee-name"> • &ltname ...&gt</span>
-                                </div>
-                                <div class="tasks-sum-button">
-                                    <span class="tasks-sum">4 task(s)</span>
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="assignee-congestion">
-                                <div class="assignee-congestion__rendering" style="width: 35%;"></div>
-                            </div>
+                        <div class="assignee-congestion">
+                            <div class="assignee-congestion__rendering" style="width: 65%;"></div>
                         </div>
                     </div>
-
-                    <div class="dividing-line-wrapper">
-                        <div class="dividing-line"></div>
-                    </div>
-
-                    <h2 class="title">Created / closed tasks</h2>
-
-                    <div class="created-closed-tasks-panels">
-                        <div class="status-rendering-panels">
-                            <div class="status-panel">
-                                <div class="status status_bold">Total created tasks today</div>
-                                <div class="tasks-sum-button">
-                                    <span class="tasks-sum tasks-sum_bold">16 task(s)</span>
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
-                                    </svg>
-                                </div>
+                    <div class="assignee-panel">
+                        <div class="assignee-profile">
+                            <div class="profile-photo-position-name">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
+                                </svg>
+                                <span class="assignee-position">Yacht owner</span>
+                                <span class="assignee-name"> • Mahatma Gautama</span>
                             </div>
-                            <div class="status-panel-congestion">
-                                <div class="status-panel-congestion__rendering" style="width: 100%"></div>
+                            <div class="tasks-sum-button">
+                                <span class="tasks-sum">4 task(s)</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
                             </div>
                         </div>
-                        <div class="status-rendering-panels">
-                            <div class="status-panel">
-                                <div class="status"> • Already closed</div>
-                                <div class="tasks-sum-button">
-                                    <span class="tasks-sum">12 task(s)</span>
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="status-panel-congestion">
-                                <div class="status-panel-congestion__rendering" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="status-rendering-panels">
-                            <div class="status-panel">
-                                <div class="status"> • Still open</div>
-                                <div class="tasks-sum-button">
-                                    <span class="tasks-sum">4 task(s)</span>
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="status-panel-congestion">
-                                <div class="status-panel-congestion__rendering" style="width: 25%"></div>
-                            </div>
-                        </div>
-                        <div class="status-rendering-panels">
-                            <div class="status-panel">
-                                <div class="status status_bold">Previosly created tasks closed today</div>
-                                <div class="tasks-sum-button">
-                                    <span class="tasks-sum tasks-sum_bold">5 task(s)</span>
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="status-panel-congestion">
-                                <div class="status-panel-congestion__rendering" style="width: 35%"></div>
-                            </div>
+                        <div class="assignee-congestion">
+                            <div class="assignee-congestion__rendering" style="width: 35%;"></div>
                         </div>
                     </div>
-
+                    <div class="assignee-panel">
+                        <div class="assignee-profile">
+                            <div class="profile-photo-position-name">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
+                                </svg>
+                                <span class="assignee-position">&ltposition&gt</span>
+                                <span class="assignee-name"> • &ltname ...&gt</span>
+                            </div>
+                            <div class="tasks-sum-button">
+                                <span class="tasks-sum">4 task(s)</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="assignee-congestion">
+                            <div class="assignee-congestion__rendering" style="width: 35%;"></div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="position">
-                    <h1 class="title">boat position history</h1>
+                <div class="assignee-panels-sm">
+                    <div class="assignee-panel-sm">
+                        <div class="profile-assignee-name-button">
+                            <div class="profile-assignee-name">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
+                                </svg>
+                                <div class="assignee-panel-sm-post-name">
+                                    <span class="assignee-panel-sm-post assignee-panel-sm-post_unassigned">Unassigned</span>
+                                    <span class="assignee-panel-sm-name"></span>
+                                </div>
+                            </div>
+                            <div class="assignee-panel-sm-button">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="congestion-tasks-sum congestion-tasks-sum_unassigned" style="width: 45%">
+                            <span class="tasks-sum tasks-sum_unassigned">6 task(s)</span>
+                        </div>
+                    </div>
+                    <div class="assignee-panel-sm">
+                        <div class="profile-assignee-name-button">
+                            <div class="profile-assignee-name">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
+                                </svg>
+                                <div class="assignee-panel-sm-post-name">
+                                    <span class="assignee-panel-sm-post">Yact owner</span>
+                                    <span class="assignee-panel-sm-name">Mahatma Gautama</span>
+                                </div>
+                            </div>
+                            <div class="assignee-panel-sm-button">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="congestion-tasks-sum" style="width: 85%">
+                            <span class="tasks-sum tasks-sum_sm">12 task(s)</span>
+                        </div>
+                    </div>
+                    <div class="assignee-panel-sm">
+                        <div class="profile-assignee-name-button">
+                            <div class="profile-assignee-name">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
+                                </svg>
+                                <div class="assignee-panel-sm-post-name">
+                                    <span class="assignee-panel-sm-post">Yact owner</span>
+                                    <span class="assignee-panel-sm-name">Mahatma Gautama</span>
+                                </div>
+                            </div>
+                            <div class="assignee-panel-sm-button">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="congestion-tasks-sum" style="width: 65%">
+                            <span class="tasks-sum tasks-sum_sm">8 task(s)</span>
+                        </div>
+                    </div>
+                    <div class="assignee-panel-sm">
+                        <div class="profile-assignee-name-button">
+                            <div class="profile-assignee-name">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
+                                </svg>
+                                <div class="assignee-panel-sm-post-name">
+                                    <span class="assignee-panel-sm-post">Yact owner</span>
+                                    <span class="assignee-panel-sm-name">Mahatma Gautama</span>
+                                </div>
+                            </div>
+                            <div class="assignee-panel-sm-button">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="congestion-tasks-sum" style="width: 35%">
+                            <span class="tasks-sum tasks-sum_sm">4 task(s)</span>
+                        </div>
+                    </div>
+                    <div class="assignee-panel-sm">
+                        <div class="profile-assignee-name-button">
+                            <div class="profile-assignee-name">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="32" height="32" rx="16" fill="#C4C4C4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0127 12.2907C19.0127 13.9547 17.6638 15.3037 15.9998 15.3037C14.3357 15.3037 12.9868 13.9547 12.9868 12.2907C12.9868 10.6267 14.3357 9.27775 15.9998 9.27775C17.6638 9.27775 19.0127 10.6267 19.0127 12.2907ZM18.6657 16.1373C19.8826 15.2923 20.6794 13.8845 20.6794 12.2907C20.6794 9.70623 18.5843 7.61108 15.9998 7.61108C13.4153 7.61108 11.3201 9.70623 11.3201 12.2907C11.3201 13.8846 12.117 15.2924 13.334 16.1374C9.83569 17.4156 7.38892 21.1413 7.38892 25.3889H9.05558C9.05558 20.8319 12.2658 17.3333 16 17.3333C19.7343 17.3333 22.9445 20.8319 22.9445 25.3889H24.6111C24.6111 21.1412 22.1642 17.4153 18.6657 16.1373Z" fill="white" />
+                                </svg>
+                                <div class="assignee-panel-sm-post-name">
+                                    <span class="assignee-panel-sm-post">Yact owner</span>
+                                    <span class="assignee-panel-sm-name">Mahatma Gautama</span>
+                                </div>
+                            </div>
+                            <div class="assignee-panel-sm-button">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="congestion-tasks-sum" style="width: 35%">
+                            <span class="tasks-sum tasks-sum_sm">4 task(s)</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="work-lists">
-                    <h1 class="title">open work lists</h1>
+                <div class="dividing-line-wrapper">
+                    <div class="dividing-line"></div>
                 </div>
 
-                <div class="systems">
-                    <h1 class="title">Systems</h1>
+                <h2 class="title">Created / closed tasks</h2>
+
+                <div class="created-closed-tasks-panels">
+                    <div class="status-rendering-panels">
+                        <div class="status-panel">
+                            <div class="status status_bold">Total created tasks today</div>
+                            <div class="tasks-sum-button">
+                                <span class="tasks-sum tasks-sum_bold">16 task(s)</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="status-panel-congestion">
+                            <div class="status-panel-congestion__rendering" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="status-rendering-panels">
+                        <div class="status-panel">
+                            <div class="status"> • Already closed</div>
+                            <div class="tasks-sum-button">
+                                <span class="tasks-sum">12 task(s)</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="status-panel-congestion">
+                            <div class="status-panel-congestion__rendering" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="status-rendering-panels">
+                        <div class="status-panel">
+                            <div class="status"> • Still open</div>
+                            <div class="tasks-sum-button">
+                                <span class="tasks-sum">4 task(s)</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="status-panel-congestion">
+                            <div class="status-panel-congestion__rendering" style="width: 25%"></div>
+                        </div>
+                    </div>
+                    <div class="status-rendering-panels">
+                        <div class="status-panel">
+                            <div class="status status_bold">Previosly created tasks closed today</div>
+                            <div class="tasks-sum-button">
+                                <span class="tasks-sum tasks-sum_bold">5 task(s)</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="status-panel-congestion">
+                            <div class="status-panel-congestion__rendering" style="width: 35%"></div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="added-tasks">
-                    <h1 class="title">Recently added tasks</h1>
+                <div class="created-closed-tasks-panels-sm">
+                    <div class="created-closed-tasks-panel-sm">
+                        <div class="status-button-sm">
+                            <span class="status status_bold">Total created tasks today</span>
+                            <button class="status-button-sm__button">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="status-panel-sm-congestion" style="width: 100%">
+                            <span class="tasks-sum tasks-sum_white">16 task(s)</span>
+                        </div>
+                    </div>
+                    <div class="created-closed-tasks-panel-sm">
+                        <div class="status-button-sm">
+                            <span class="status">• Already closed</span>
+                            <button class="status-button-sm__button">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="status-panel-sm-congestion" style="width: 85%">
+                            <span class="tasks-sum tasks-sum_white">12 task(s)</span>
+                        </div>
+                    </div>
+                    <div class="created-closed-tasks-panel-sm">
+                        <div class="status-button-sm">
+                            <span class="status"> • Still open</span>
+                            <button class="status-button-sm__button">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="status-panel-sm-congestion" style="width: 35%">
+                            <span class="tasks-sum tasks-sum_white">4 task(s)</span>
+                        </div>
+                    </div>
+                    <div class="created-closed-tasks-panel-sm">
+                        <div class="status-button-sm">
+                            <span class="status status_bold">Previosly created tasks closed today</span>
+                            <button class="status-button-sm__button">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.707 18.207L16.414 12.5L10.707 6.79297L9.293 8.20697L13.586 12.5L9.293 16.793L10.707 18.207Z" fill="#828282" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="status-panel-sm-congestion" style="width: 35%">
+                            <span class="tasks-sum tasks-sum_white">5 task(s)</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="alerts"></div>
-
-                <div class="calendar">
-                    <h1 class="title">Boat calendar</h1>
-                </div>
-
-                <div class="crew-list">
-                    <h1 class="title">Crew list</h1>
-                </div>
             </div>
+
+            <!--      <div class="position">-->
+            <!--        <h1 class="title">boat position history</h1>-->
+            <!--      </div>-->
+
+            <!--      <div class="work-lists">-->
+            <!--        <h1 class="title">open work lists</h1>-->
+            <!--      </div>-->
+
+            <!--      <div class="systems">-->
+            <!--        <h1 class="title">Systems</h1>-->
+            <!--      </div>-->
+
+            <!--      <div class="added-tasks">-->
+            <!--        <h1 class="title">Recently added tasks</h1>-->
+            <!--      </div>-->
+
+            <!--      <div class="alerts"></div>-->
+
+            <!--      <div class="calendar">-->
+            <!--        <h1 class="title">Boat calendar</h1>-->
+            <!--      </div>-->
+
+            <!--      <div class="crew-list">-->
+            <!--        <h1 class="title">Crew list</h1>-->
+            <!--      </div>-->
+            <!--    </div>-->
         </main>
     </div>
 </body>

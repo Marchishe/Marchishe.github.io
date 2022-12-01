@@ -1,16 +1,15 @@
-.markup {
-  height: 100vh;
-  padding: 4.8rem;
-  display: grid;
-  grid-gap: 2.4rem;
-  grid-template-columns: 121rem 59rem;
-  grid-template-areas:
-          "tasks alerts"
-          "position calendar"
-          "work-lists crew-lists"
-          "systems systems"
-          "added-tasks added-tasks";
-}
+//.markup {
+//  padding: 4.8rem;
+//  display: grid;
+//  grid-gap: 2.4rem;
+//  //grid-template-columns: 121rem 59rem;
+//  grid-template-areas:
+//          "tasks alerts"
+//          "position calendar"
+//          "work-lists crew-lists"
+//          "systems systems"
+//          "added-tasks added-tasks";
+//}
 
 .title {
   display: flex;
@@ -32,204 +31,204 @@
   grid-area: tasks;
 }
 
-.position {
-  background-color: $whiteColor;
-  max-width: 121rem;
-  height: 62.3rem;
-  border: 0.5px solid #E7E7EB;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
-  border-radius: 1.6rem;
-  grid-area: position;
-}
-
-.work-lists {
-  background-color: $whiteColor;
-  max-width: 121rem;
-  height: 87.7rem;
-  border: 0.5px solid #E7E7EB;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
-  border-radius: 1.6rem;
-  grid-area: work-lists;
-}
-
-
-.systems {
-  background-color: $whiteColor;
-  max-width: 121rem;
-  height: 68rem;
-  border: 0.5px solid #E7E7EB;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
-  border-radius: 1.6rem;
-  grid-area: systems;
-}
-
-
-.added-tasks {
-  background-color: $whiteColor;
-  max-width: 121rem;
-  height: 51.6rem;
-  border: 0.5px solid #E7E7EB;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
-  border-radius: 1.6rem;
-  grid-area: added-tasks;
-}
-
-.alerts {
-  background-color: $yellowBg;
-  max-width: 59rem;
-  height: 102.15rem;
-  border: 0.5px solid #E7E7EB;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
-  border-radius: 1.6rem;
-  grid-area: alerts;
-}
-
+//.position {
+//  background-color: $whiteColor;
+//  max-width: 121rem;
+//  height: 62.3rem;
+//  border: 0.5px solid #E7E7EB;
+//  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
+//  border-radius: 1.6rem;
+//  grid-area: position;
+//}
 //
-.calendar {
-  background-color: $whiteColor;
-  max-width: 59rem;
-  height: 68.9rem;
-  border: 0.5px solid #E7E7EB;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
-  border-radius: 1.6rem;
-  grid-area: calendar;
-}
-
-
-.crew-list {
-  background-color: $whiteColor;
-  max-width: 59rem;
-  height: 67.2rem;
-  border: 0.5px solid #E7E7EB;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
-  border-radius: 1.6rem;
-  grid-area: crew-lists;
-}
+//.work-lists {
+//  background-color: $whiteColor;
+//  max-width: 121rem;
+//  height: 87.7rem;
+//  border: 0.5px solid #E7E7EB;
+//  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
+//  border-radius: 1.6rem;
+//  grid-area: work-lists;
+//}
+//
+//
+//.systems {
+//  background-color: $whiteColor;
+//  max-width: 121rem;
+//  height: 68rem;
+//  border: 0.5px solid #E7E7EB;
+//  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
+//  border-radius: 1.6rem;
+//  grid-area: systems;
+//}
+//
+//
+//.added-tasks {
+//  background-color: $whiteColor;
+//  max-width: 121rem;
+//  height: 51.6rem;
+//  border: 0.5px solid #E7E7EB;
+//  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
+//  border-radius: 1.6rem;
+//  grid-area: added-tasks;
+//}
+//
+//.alerts {
+//  background-color: $yellowBg;
+//  max-width: 59rem;
+//  height: 102.15rem;
+//  border: 0.5px solid #E7E7EB;
+//  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
+//  border-radius: 1.6rem;
+//  grid-area: alerts;
+//}
+//
+////
+//.calendar {
+//  background-color: $whiteColor;
+//  max-width: 59rem;
+//  height: 68.9rem;
+//  border: 0.5px solid #E7E7EB;
+//  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
+//  border-radius: 1.6rem;
+//  grid-area: calendar;
+//}
+//
+//
+//.crew-list {
+//  background-color: $whiteColor;
+//  max-width: 59rem;
+//  height: 67.2rem;
+//  border: 0.5px solid #E7E7EB;
+//  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
+//  border-radius: 1.6rem;
+//  grid-area: crew-lists;
+//}
 
 @media screen and (max-width: 1500px) {
-  .markup {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-            "tasks tasks"
-            "alerts alerts"
-            "position position"
-            "calendar crew-lists"
-            "systems systems"
-            "added-tasks added-tasks";
-  }
+  //.markup {
+  //  grid-template-columns: 1fr 1fr;
+  //  grid-template-areas:
+  //          "tasks tasks"
+  //          "alerts alerts"
+  //          "position position"
+  //          "calendar crew-lists"
+  //          "systems systems"
+  //          "added-tasks added-tasks";
+  //}
 
   .tasks {
     max-width: 140.4rem;
   }
-  .alerts {
-    max-width: 140.4rem;
-    height: 53.6rem;
-  }
-  .position {
-    max-width: 140.4rem;
-    height: 62.3rem;
-  }
-  .calendar {
-    max-width: 69rem;
-    height: 68.9rem;
-  }
-  .crew-list {
-    max-width: 69rem;
-    height: 68.9rem;
-  }
-  .systems {
-    max-width: 140.4rem;
-    height: 74rem;
-  }
-  .added-tasks {
-    max-width: 140.4rem;
-    height: 51.6rem;
-  }
-  .work-lists {
-    display: none;
-  }
+  //.alerts {
+  //  max-width: 140.4rem;
+  //  height: 53.6rem;
+  //}
+  //.position {
+  //  max-width: 140.4rem;
+  //  height: 62.3rem;
+  //}
+  //.calendar {
+  //  max-width: 69rem;
+  //  height: 68.9rem;
+  //}
+  //.crew-list {
+  //  max-width: 69rem;
+  //  height: 68.9rem;
+  //}
+  //.systems {
+  //  max-width: 140.4rem;
+  //  height: 74rem;
+  //}
+  //.added-tasks {
+  //  max-width: 140.4rem;
+  //  height: 51.6rem;
+  //}
+  //.work-lists {
+  //  display: none;
+  //}
 }
 
-@media screen and (max-width: 745px) {
-  .markup {
-    padding: 1.6rem;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-            "tasks"
-            "alerts"
-            "position"
-            "calendar"
-            "crew-lists"
-            "systems"
-            "added-tasks";
-  }
+@media screen and (max-width: 991px) {
+  //.markup {
+  //  padding: 1.6rem;
+  //  grid-template-columns: 1fr;
+  //  grid-template-areas:
+  //          "tasks"
+  //          "alerts"
+  //          "position"
+  //          "calendar"
+  //          "crew-lists"
+  //          "systems"
+  //          "added-tasks";
+  //}
   .tasks {
     max-width: 71.2rem;
     height: 107.3rem;
   }
-  .alerts {
-    max-width: 71.2rem;
-    height: 104.8rem;
-  }
-  .position {
-    max-width: 71.2rem;
-    height: 72.5rem;
-  }
-  .calendar {
-    max-width: 71.2rem;
-    height: 53.3rem;
-  }
-  .crew-list {
-    max-width: 71.2rem;
-    height: 42.4rem;
-  }
-  .systems {
-    max-width: 71.2rem;
-    height: 106.6rem;
-  }
-  .added-tasks {
-    max-width: 71.2rem;
-    height: 58rem;
-  }
+  //.alerts {
+  //  max-width: 71.2rem;
+  //  height: 104.8rem;
+  //}
+  //.position {
+  //  max-width: 71.2rem;
+  //  height: 72.5rem;
+  //}
+  //.calendar {
+  //  max-width: 71.2rem;
+  //  height: 53.3rem;
+  //}
+  //.crew-list {
+  //  max-width: 71.2rem;
+  //  height: 42.4rem;
+  //}
+  //.systems {
+  //  max-width: 71.2rem;
+  //  height: 106.6rem;
+  //}
+  //.added-tasks {
+  //  max-width: 71.2rem;
+  //  height: 58rem;
+  //}
 }
 
-@media screen and (max-width: 375px) {
-  .markup {
-    grid-template-areas:
-                  "tasks"
-                  "alerts"
-                  "position"
-                  "calendar"
-                  "systems"
-                  "crew-lists"
-                  "added-tasks";
-  }
+@media screen and (max-width: 743px) {
+  //.markup {
+  //  grid-template-areas:
+  //                "tasks"
+  //                "alerts"
+  //                "position"
+  //                "calendar"
+  //                "systems"
+  //                "crew-lists"
+  //                "added-tasks";
+  //}
   .tasks {
     max-width: 34rem;
     height: 129.6rem;
   }
-  .alerts {
-    max-width: 34rem;
-    height: 104.8rem;
-  }
-  .position {
-    max-width: 34rem;
-    height: 72.5rem;
-  }
-  .calendar {
-    max-width: 34rem;
-    height: 53.3rem;
-  }
-  .systems {
-    max-width: 34rem;
-    height: 202.8rem;
-  }
-  .crew-list {
-    max-width: 34rem;
-    height: 67.2rem;
-  }
-  .added-tasks {
-    max-width: 34rem;
-    height: 58rem;
-  }
+  //.alerts {
+  //  max-width: 34rem;
+  //  height: 104.8rem;
+  //}
+  //.position {
+  //  max-width: 34rem;
+  //  height: 72.5rem;
+  //}
+  //.calendar {
+  //  max-width: 34rem;
+  //  height: 53.3rem;
+  //}
+  //.systems {
+  //  max-width: 34rem;
+  //  height: 202.8rem;
+  //}
+  //.crew-list {
+  //  max-width: 34rem;
+  //  height: 67.2rem;
+  //}
+  //.added-tasks {
+  //  max-width: 34rem;
+  //  height: 58rem;
+  //}
 }

@@ -227,6 +227,10 @@
   gap: 1.6rem;
 }
 
+.assignee-panel-sm {
+  display: none;
+}
+
 .assignee-profile {
   display: flex;
   align-items: center;
@@ -255,6 +259,14 @@
 
   &_bold {
     font-weight: 700;
+  }
+
+  &_sm {
+    color: $whiteColor;
+  }
+
+  &_white {
+    color: $whiteColor;
   }
 }
 
@@ -322,6 +334,10 @@
   padding-top: 1.6rem;
 }
 
+.created-closed-tasks-panels-sm {
+  display: none;
+}
+
 .status-rendering-panels {
   display: flex;
   gap: 1.6rem;
@@ -368,8 +384,10 @@
   }
 }
 
-@media screen and (max-width: 987px) {
+@media screen and (max-width: 991px) {
   .tasks {
+    padding: 1.6rem;
+
     &__heading {
       flex-direction: column;
       align-items: flex-start;
@@ -390,12 +408,6 @@
     &__button_checked {
       padding: 1rem 2.317rem;
     }
-  }
-}
-
-@media screen and (max-width: 745px) {
-  .tasks {
-    padding: 1.6rem;
   }
   .color-tasks-blocks {
     padding: 1.6rem 0;
@@ -429,7 +441,141 @@
       top: 8%;
     }
   }
+  .assignee-panel {
+    display: none;
+  }
+  .assignee-panel-sm {
+    display: block;
+    padding-bottom: 1.2rem;
+  }
+  .profile-assignee-name-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.4rem;
+  }
+  .profile-assignee-name {
+    display: flex;
+    align-items: center;
+    gap: 0 0.8rem;
+  }
+
+  .assignee-panel-sm-post-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem 0;
+  }
+  .assignee-panel-sm-post {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+
+    &_unassigned {
+      color: $redColor;
+    }
+  }
+  .assignee-panel-sm-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: $grayText;
+  }
   .assignee-congestion {
     display: none;
+  }
+  .congestion-tasks-sum {
+    padding-right: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 68rem;
+    height: 2.8rem;
+    background-color: $menuBgColor;
+    border-radius: 0.8rem;
+
+    &_unassigned {
+      background-color: $unassignedBg;
+    }
+  }
+
+  .dividing-line-wrapper {
+    padding: 1.6rem 0;
+  }
+
+  .created-closed-tasks-panels {
+    display: none;
+  }
+  .created-closed-tasks-panels-sm {
+    display: block;
+    padding-top: 2rem;
+    margin-bottom: 3.6rem;
+  }
+  .status-button-sm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__button {
+      background-color: transparent;
+    }
+  }
+  .status-panel-sm-congestion {
+    width: 67.8rem;
+    height: 2.8rem;
+    background-color: $blueColor;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .select-inputs-button {
+    display: grid;
+    gap: 1.6rem 0;
+    grid-template-areas:
+            "select select"
+            "check drafts"
+            "button button";
+  }
+  .select {
+    grid-area: select;
+  }
+  .checkbox-block {
+    padding: 0;
+    grid-area: check;
+  }
+  .drafts {
+    grid-area: drafts;
+    padding-right: 2.8rem;
+  }
+  .button {
+    grid-area: button;
+    width: 8.8rem;
+    margin: 0;
+  }
+  .color-tasks-blocks {
+    display: grid;
+    gap: 1.6rem 1.2rem;
+    grid-template-areas:
+                        "green violete"
+                         "pink gray";
+  }
+  .green-block {
+    width: 14.8rem;
+    grid-area: green;
+  }
+  .violete-block {
+    grid-area: violete;
+  }
+  .pink-block {
+    grid-area: pink;
+  }
+  .gray-block {
+    grid-area: gray;
   }
 }
