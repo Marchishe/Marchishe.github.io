@@ -1,15 +1,16 @@
-//.markup {
-//  padding: 4.8rem;
-//  display: grid;
-//  grid-gap: 2.4rem;
-//  //grid-template-columns: 121rem 59rem;
-//  grid-template-areas:
-//          "tasks alerts"
-//          "position calendar"
-//          "work-lists crew-lists"
-//          "systems systems"
-//          "added-tasks added-tasks";
-//}
+.markup {
+  padding: 4.8rem;
+  display: grid;
+  grid-gap: 2.4rem;
+  grid-template-columns: 121rem 59rem;
+  grid-template-areas:
+          "tasks alerts"
+  //"position calendar"
+  //"work-lists crew-lists"
+  //"systems systems"
+  //"added-tasks added-tasks"
+;
+}
 
 .title {
   display: flex;
@@ -73,15 +74,16 @@
 //  grid-area: added-tasks;
 //}
 //
-//.alerts {
-//  background-color: $yellowBg;
-//  max-width: 59rem;
-//  height: 102.15rem;
-//  border: 0.5px solid #E7E7EB;
-//  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
-//  border-radius: 1.6rem;
-//  grid-area: alerts;
-//}
+.alerts {
+  background-color: $yellowBg;
+  max-width: 59rem;
+  height: 96.55rem;
+  border: 0.5px solid #E7E7EB;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
+  border-radius: 1.6rem;
+  grid-area: alerts;
+}
+
 //
 ////
 //.calendar {
@@ -106,24 +108,25 @@
 //}
 
 @media screen and (max-width: 1500px) {
-  //.markup {
-  //  grid-template-columns: 1fr 1fr;
-  //  grid-template-areas:
-  //          "tasks tasks"
-  //          "alerts alerts"
-  //          "position position"
-  //          "calendar crew-lists"
-  //          "systems systems"
-  //          "added-tasks added-tasks";
-  //}
+  .markup {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "tasks tasks"
+            "alerts alerts"
+    //"position position"
+    //"calendar crew-lists"
+    //"systems systems"
+    //"added-tasks added-tasks"
+  ;
+  }
 
   .tasks {
     max-width: 140.4rem;
   }
-  //.alerts {
-  //  max-width: 140.4rem;
-  //  height: 53.6rem;
-  //}
+  .alerts {
+    max-width: 140.4rem;
+    height: 53.6rem;
+  }
   //.position {
   //  max-width: 140.4rem;
   //  height: 62.3rem;
@@ -150,26 +153,27 @@
 }
 
 @media screen and (max-width: 991px) {
-  //.markup {
-  //  padding: 1.6rem;
-  //  grid-template-columns: 1fr;
-  //  grid-template-areas:
-  //          "tasks"
-  //          "alerts"
-  //          "position"
-  //          "calendar"
-  //          "crew-lists"
-  //          "systems"
-  //          "added-tasks";
-  //}
+  .markup {
+    padding: 1.6rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "tasks"
+            "alerts"
+    //"position"
+    //"calendar"
+    //"crew-lists"
+    //"systems"
+    //"added-tasks"
+  ;
+  }
   .tasks {
     max-width: 71.2rem;
     height: 107.3rem;
   }
-  //.alerts {
-  //  max-width: 71.2rem;
-  //  height: 104.8rem;
-  //}
+  .alerts {
+    max-width: 71.2rem;
+    height: 104.8rem;
+  }
   //.position {
   //  max-width: 71.2rem;
   //  height: 72.5rem;
@@ -193,24 +197,25 @@
 }
 
 @media screen and (max-width: 743px) {
-  //.markup {
-  //  grid-template-areas:
-  //                "tasks"
-  //                "alerts"
-  //                "position"
-  //                "calendar"
-  //                "systems"
-  //                "crew-lists"
-  //                "added-tasks";
-  //}
+  .markup {
+    grid-template-areas:
+                  "tasks"
+                  "alerts"
+    //"position"
+    //"calendar"
+    //"systems"
+    //"crew-lists"
+    //"added-tasks"
+  ;
+  }
   .tasks {
     max-width: 34rem;
     height: 129.6rem;
   }
-  //.alerts {
-  //  max-width: 34rem;
-  //  height: 104.8rem;
-  //}
+  .alerts {
+    max-width: 34rem;
+    height: 104.8rem;
+  }
   //.position {
   //  max-width: 34rem;
   //  height: 72.5rem;

@@ -1,3 +1,5 @@
+@import "variablies";
+
 %colorBlocksProperties {
   display: flex;
   flex-direction: column;
@@ -11,6 +13,21 @@
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.6rem;
+}
+
+%alertsBlocksProperties {
+  background-color: $whiteColor;
+  border: 0.5px solid #E7E7EB;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  padding: 2.4rem;
+}
+
+%alertsStatusPanel {
+  width: 51rem;
+  height: 4rem;
+  background-color: $controlBg;
+  border-radius: 0.8rem;
 }
 
 @media screen and (max-width: 1500px) {

@@ -1,0 +1,48 @@
+@import 'variablies';
+@import "mixines";
+
+.alerts {
+  padding: 1.6rem;
+
+  &__blocks {
+    display: grid;
+    gap: 2.4rem 0;
+  }
+
+  &__open-tasks {
+    width: 55.8rem;
+    height: 24rem;
+    @extend %alertsBlocksProperties;
+  }
+
+  &__expired-tasks {
+    width: 55.8rem;
+    height: 25.35rem;
+    @extend %alertsBlocksProperties;
+  }
+
+  &__boats-documents {
+    width: 55.8rem;
+    height: 18.4rem;
+    @extend %alertsBlocksProperties;
+  }
+
+  &__crew-documents {
+    width: 55.8rem;
+    height: 18.4rem;
+    @extend %alertsBlocksProperties;
+  }
+
+  &__block-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.6rem;
+    gap: 1.6rem 0;
+  }
+
+  &__tasks-status-sum-button {
+    @extend %alertsStatusPanel;
+    display: flex;
+    align-items: center;
+  }
+}
